@@ -11,3 +11,5 @@ The double-booking bug was in the overlap check. The original logic only detecte
 ## AI use
 
 AI was used to review the existing logic, identify edge cases, and help plan the fixes. I checked the output by reading the repository's business rules, reviewing every code change, running focused backend checks, manually testing overlapping and non-overlapping dates, checking same-day and multi-day pricing, confirming maintenance equipment could not be listed or booked, and testing the frontend date update behavior.
+
+Additional verification was completed by testing overlapping and non-overlapping bookings, checking same-day and multi-day pricing, confirming that maintenance equipment is hidden and blocked from direct booking requests, verifying frontend total recalculation, and ensuring that bookings.json and requirements.txt were not changed.
